@@ -322,7 +322,7 @@ declare global {
 	}
 }
 
-window.addEventListener('load', () => {
+window.addEventListener('DOMContentLoaded', () => {
 	HSCarousel.autoInit();
 
 	// Uncomment for debug

@@ -556,7 +556,7 @@ declare global {
 	}
 }
 
-window.addEventListener('load', () => {
+window.addEventListener('DOMContentLoaded', () => {
 	HSDropdown.autoInit();
 
 	// Uncomment for debug

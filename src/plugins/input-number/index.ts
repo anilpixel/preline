@@ -199,7 +199,7 @@ declare global {
 	}
 }
 
-window.addEventListener('load', () => {
+window.addEventListener('DOMContentLoaded', () => {
 	HSInputNumber.autoInit();
 
 	// Uncomment for debug

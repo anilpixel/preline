@@ -186,7 +186,7 @@ declare global {
 	}
 }
 
-window.addEventListener('load', () => {
+window.addEventListener('DOMContentLoaded', () => {
 	HSTogglePassword.autoInit();
 
 	// Uncomment for debug

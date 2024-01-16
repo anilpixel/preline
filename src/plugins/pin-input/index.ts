@@ -188,7 +188,7 @@ declare global {
 	}
 }
 
-window.addEventListener('load', () => {
+window.addEventListener('DOMContentLoaded', () => {
 	HSPinInput.autoInit();
 
 	// Uncomment for debug

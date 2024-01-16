@@ -792,7 +792,7 @@ declare global {
 	}
 }
 
-window.addEventListener('load', () => {
+window.addEventListener('DOMContentLoaded', () => {
 	HSStepper.autoInit();
 
 	// Uncomment for debug

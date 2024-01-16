@@ -166,7 +166,7 @@ declare global {
 	}
 }
 
-window.addEventListener('load', () => {
+window.addEventListener('DOMContentLoaded', () => {
 	HSCopyMarkup.autoInit();
 
 	// Uncomment for debug

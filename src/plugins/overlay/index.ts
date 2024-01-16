@@ -433,7 +433,7 @@ declare global {
 	}
 }
 
-window.addEventListener('load', () => {
+window.addEventListener('DOMContentLoaded', () => {
 	HSOverlay.autoInit();
 
 	// Uncomment for debug

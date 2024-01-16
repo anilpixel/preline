@@ -247,7 +247,7 @@ declare global {
 	}
 }
 
-window.addEventListener('load', () => {
+window.addEventListener('DOMContentLoaded', () => {
 	HSTooltip.autoInit();
 
 	// Uncomment for debug

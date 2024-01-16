@@ -357,7 +357,7 @@ declare global {
 	}
 }
 
-window.addEventListener('load', () => {
+window.addEventListener('DOMContentLoaded', () => {
 	HSStrongPassword.autoInit();
 
 	// Uncomment for debug

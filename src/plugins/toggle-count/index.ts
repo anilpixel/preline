@@ -127,7 +127,7 @@ declare global {
 	}
 }
 
-window.addEventListener('load', () => {
+window.addEventListener('DOMContentLoaded', () => {
 	HSToggleCount.autoInit();
 
 	// Uncomment for debug

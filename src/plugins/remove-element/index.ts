@@ -80,7 +80,7 @@ declare global {
 	}
 }
 
-window.addEventListener('load', () => {
+window.addEventListener('DOMContentLoaded', () => {
 	HSRemoveElement.autoInit();
 
 	// Uncomment for debug

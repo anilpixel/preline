@@ -591,11 +591,15 @@ class HSSelect extends HSBasePlugin<ISelectOptions> implements ISelect {
 	}
 
 	private removeSelectOption(val: string) {
-		const hasOption = !!this.selectOptions.some((el: ISingleOption) => el.val === val);
+		const hasOption = !!this.selectOptions.some(
+			(el: ISingleOption) => el.val === val,
+		);
 
 		if (!hasOption) return false;
 
-		this.selectOptions = this.selectOptions.filter((el: ISingleOption) => el.val !== val);
+		this.selectOptions = this.selectOptions.filter(
+			(el: ISingleOption) => el.val !== val,
+		);
 	}
 
 	private resetTagsInputField() {
@@ -784,7 +788,9 @@ class HSSelect extends HSBasePlugin<ISelectOptions> implements ISelect {
 		let i = `${this.selectOptions.length}`;
 		const addOption = (option: ISingleOption) => {
 			const { title, val, options } = option;
-			const hasOption = !!this.selectOptions.some((el: ISingleOption) => el.val === val);
+			const hasOption = !!this.selectOptions.some(
+				(el: ISingleOption) => el.val === val,
+			);
 
 			if (!hasOption) {
 				this.addSelectOption(title, val, options);
@@ -804,7 +810,9 @@ class HSSelect extends HSBasePlugin<ISelectOptions> implements ISelect {
 
 	public removeOption(values: string | string[]) {
 		const removeOption = (val: string) => {
-			const hasOption = !!this.selectOptions.some((el: ISingleOption) => el.val === val);
+			const hasOption = !!this.selectOptions.some(
+				(el: ISingleOption) => el.val === val,
+			);
 
 			if (hasOption) {
 				this.removeSelectOption(val);
@@ -1109,7 +1117,7 @@ declare global {
 	}
 }
 
-window.addEventListener('load', () => {
+window.addEventListener('DOMContentLoaded', () => {
 	HSSelect.autoInit();
 
 	// Uncomment for debug

@@ -133,7 +133,7 @@ declare global {
 	}
 }
 
-window.addEventListener('load', () => {
+window.addEventListener('DOMContentLoaded', () => {
 	HSThemeSwitch.autoInit();
 
 	// Uncomment for debug

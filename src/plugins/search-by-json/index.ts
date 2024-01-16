@@ -205,7 +205,7 @@ declare global {
 	}
 }
 
-window.addEventListener('load', () => {
+window.addEventListener('DOMContentLoaded', () => {
 	HSSearchByJson.autoInit();
 
 	// Uncomment for debug

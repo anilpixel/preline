@@ -238,7 +238,7 @@ declare global {
 	}
 }
 
-window.addEventListener('load', () => {
+window.addEventListener('DOMContentLoaded', () => {
 	HSTabs.autoInit();
 
 	// Uncomment for debug

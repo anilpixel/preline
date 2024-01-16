@@ -174,7 +174,7 @@ declare global {
 	}
 }
 
-window.addEventListener('load', () => {
+window.addEventListener('DOMContentLoaded', () => {
 	HSAccordion.autoInit();
 
 	// Uncomment for debug

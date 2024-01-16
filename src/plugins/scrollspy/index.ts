@@ -185,7 +185,7 @@ declare global {
 	}
 }
 
-window.addEventListener('load', () => {
+window.addEventListener('DOMContentLoaded', () => {
 	HSScrollspy.autoInit();
 
 	// Uncomment for debug
